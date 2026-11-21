@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Смартфон Nova X5 — характеристики, цена и оформление заявки в PlayTable.">
+  <title>Смартфон Nova X5 — PlayTable</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">PlayTable</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a> /
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a> /
+      <span class="breadcrumbs__current">Смартфон Nova X5</span>
+    </nav>
+
+    <article class="product-detail">
+      <div class="product-detail__media">
+        <div class="product-detail__image" role="img" aria-label="Изображение смартфона Nova X5">Nova X5</div>
+        <span class="product-card__badge product-card__badge--new product-detail__badge">Новинка</span>
+      </div>
+      <div class="product-detail__info">
+        <h1 class="product-detail__title">Смартфон Nova X5</h1>
+        <p class="product-detail__description">Флагманский смартфон с экраном 6.5", камерой 108 МП и поддержкой 5G. Подходит для игр, фото и работы.</p>
+        <p class="product-detail__price">39 990 ₽</p>
+        <button class="button button--primary" id="openModal" type="button">Оставить заявку</button>
+
+        <table class="specs">
+          <caption class="specs__caption">Характеристики Nova X5</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Экран</td><td>6.5", AMOLED, 120 Гц</td></tr>
+            <tr><td>Память</td><td>256 ГБ + 8 ГБ ОЗУ</td></tr>
+            <tr><td>Камера</td><td>108 МП + 12 МП + 8 МП</td></tr>
+            <tr><td>Аккумулятор</td><td>5000 мА·ч, быстрая зарядка 65 Вт</td></tr>
+            <tr><td>Связь</td><td>5G, Wi-Fi 6, Bluetooth 5.3</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <aside class="similar">
+      <h2 class="section__title">Похожие товары</h2>
+      <ul class="similar__list">
+        <li><a class="similar__link" href="catalog.html">Смартфон Nova X5 Mini — 29 990 ₽</a></li>
+        <li><a class="similar__link" href="catalog.html">Наушники AirSound Pro — 12 490 ₽</a></li>
+        <li><a class="similar__link" href="catalog.html">PowerBank Volt 20000 — 3 490 ₽</a></li>
+      </ul>
+    </aside>
+
+    <dialog class="modal" id="orderModal">
+      <form class="modal__content" method="dialog">
+        <h2 class="modal__title">Оставить заявку</h2>
+        <p class="modal__text">Оставьте телефон — перезвоним и подтвердим наличие Nova X5.</p>
+        <label class="modal__label" for="modal-phone">Телефон</label>
+        <input class="modal__input" id="modal-phone" name="phone" type="tel" required>
+        <div class="modal__actions">
+          <button class="button button--primary" value="send" type="submit">Отправить</button>
+          <button class="button button--ghost" value="close" type="submit">Закрыть</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">© 2026 PlayTable. Контрольная работа №1.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
