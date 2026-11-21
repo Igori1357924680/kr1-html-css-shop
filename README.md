@@ -8,7 +8,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://username.github.io/kr1-html-css-shop/
+GitHub Pages: https://Igori1357924680.github.io/kr1-html-css-shop/
 
 ## Структура проекта
 kr1-html-css-shop/
